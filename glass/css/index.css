@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #65dfc9,#6cdbdb);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  min-height: 60vh;
+  width: 90%;
+  background: #ffffff;
+  background: linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.3));
+  backdrop-filter: blur(1.6rem);
+  border-radius: 1rem;
+  border: 5px 5px 4px rgba(0,0,0,0.04);
+  z-index: 4;
+  
+  display: grid;
+  grid-template: 1fr / 100px auto;
+}
+
+.circul1, .circul2 {
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  background: linear-gradient(to right top, rgba(255,255,255,.7), rgba(255,255,255,0.3));
+  border-radius: 50%;
+  
+  position: absolute;
+}
+
+.circul1 {
+  bottom: 17%;
+  left: 03%;
+  z-index: 1;
+}
+
+.circul2 {
+  right: 0%;
+  top: 16%;
+  z-index: 0;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.cardboard {
+  height: 100%;
+  width: 100%;
+  /*display: grid;
+  grid-template: 42px auto auto/1fr;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  background: linear-gradient(to left bottom , rgba(0,0,255,0.8), rgba(0,0,255,0.2));
+}
+
+.user-img {
+  position: relative;
+  height: 42px;
+  width: 100%;
+  display: flex;
+  
+  border: 1px solid black;
+}
+
+.user-img img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-img h1 {
+  font-size: .3em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.user-links {
+  width: 100%;
+  background-color: red;
+  
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr ;
+}
+
+.user-links div{
+  display: flex;
+  
+}
+
+.user-links div a{
+  text-align: center;
+  text-decoration: none;
+}
+
+.gopro {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.gopro img {
+  width: 40px;
+  height: 40px;
+}
+
+.gopro h1{
+  font-size: 0.4em;
+}
+
+.gamelinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.game-hadding {
+  width: 100%;
+}
+
+#searchbar {
+  text-decoration: none;
+  border-radius: 2rem;
+  border: none;
+}
+
+.games{
+  
+}
+
+
+.cards {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255,255,255,0.9);
+  margin-top: 6px;
+  border-radius: .9rem;
+}
+
+.gamelogo img {
+  height: 40px;
+  width: 40px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-info h1{
+  font-size: 0.4em;
+}
+
+.game-info progress{
+  width: 50px;
+}
+
+.progress-text h1 {
+  font-size: .4em;
+}

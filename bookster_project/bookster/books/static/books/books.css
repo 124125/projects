@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.books {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.book {
+  background: #00fff3;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.book a {
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

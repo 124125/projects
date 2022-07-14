@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/sp.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bodyele {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.bubble {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+/*  transform: translateY(-50%);*/
+  background: rgba(0,0,0,.09);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+  z-index: 3;
+  backdrop-filter: blur(0.2rem);
+}

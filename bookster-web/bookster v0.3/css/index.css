@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+:root {
+  --fc:#136a8a;
+  --sc:#267871;
+  
+  --cfc:#43cea2;
+  --csc:#185a9d;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to right top,var(--fc),var(--sc));
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  width: 90%;
+  min-height: 90vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(to top right,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border: 1px 1px 3px rgba(0,0,0,0.7);
+  backdrop-filter: blur(0.5rem);
+  
+  display: grid;
+  grid-template: 40vh auto / 1fr;
+  z-index: 20;
+}
+
+.circul1, .circul2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to top left, var(--cfc),var(--csc));
+  border: 3px 3px 1px rgba(0,0,0,0.1);
+}
+
+.circul1{
+  top: 0px;
+  right: 0px;
+}
+
+.circul2{
+  left: 0;
+  top: 270px;
+}
+
+header {
+  position: relative;
+  height: 96%;
+  width: 96%;
+  margin: 2%;
+/*  background-image: url('https://picsum.photos/300');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1rem);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+header p{
+  font-size: 2rem;
+  position: absolute;
+  right: 1%;
+  bottom: 27%;
+}
+
+
+.bookshelf {
+  width: 100%;
+  display: grid;
+  grid-template: auto 150px / 1fr;
+}
+
+.book {
+  position: relative;
+  height: 194px;
+  width: 96%;
+  display: grid;
+  grid-template: 180px / auto 1fr;
+  border: 6px 6px 1px rgba(0,0,0,0.6);
+  background: linear-gradient(to top right,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  margin: 2%;
+}
+
+.book img {
+  height: 180px;
+  width: 139px;
+  margin: 7px;
+}
+
+.book-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  height: 100px;
+  width: 95%;
+  margin: 2.5%;
+  
+  border: 6px 6px 1px rgba(0,0,0,1);
+  background: linear-gradient(to top right,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  
+}

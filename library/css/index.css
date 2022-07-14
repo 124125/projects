@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 2px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header-wrapper {
+  padding: 80px;
+  background-color: #8a8afa;
+  text-align: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.header-wrapper h1 {
+  font-size: 50px;
+}
+
+
+/*    nav bar css is here     */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #000000;
+}
+
+.nav-wrapper .left-side {
+  display: flex;
+}
+
+.link-wrapper {
+  margin-right: 10px;
+}
+
+.current-link {
+  border-bottom: 1px solid #000000;
+}
+.link-wrapper a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*              footer             */
+
+footer {
+  height: 10vh;
+  text-align: center;
+  padding: 25px;
+  background-color: #8a8a8a;
+}
+
+footer h1{
+  font-size: 29px;
+}
+
+/*            contrnt               */
+
+.cards-wrapper {
+  border: 1px solid #000000;
+}
+
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid #000000;
+}
+
+.cards-wrapper .card-wrapper .text-wrapper {
+  border: 1px solid #000000;
+  position: relative;
+  
+}
+
+.text-wrapper h {
+  color: #ff0000;
+  position: relative;
+  top: 0;
+}

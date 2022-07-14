@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'books/index.css' %}">
+  <script src="js/index.js"></script>
+  <title>bookster</title>
+</head>
+<body>
+	<div class="subjects">
+
+	  {% for i in subjectslist %}
+	  <div class="subject">
+		  <a href="{{ i.subject_name }}">{{ i.subject_name }}</a>
+	  </div>
+	  {% endfor %}
+
+	</div>
+</body>
+</html>

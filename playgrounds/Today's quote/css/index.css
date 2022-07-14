@@ -1,0 +1,86 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Times New Roman,Sans-Serif;
+}
+
+h1 {
+  font-size: 30.0px;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right,#232526,#414345);
+  
+  display: grid;
+  place-items: center;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.quote {
+  width: 80%;
+}
+
+.quote h2 {
+  position: relative;
+  text-align: center;
+}
+
+.quote h2::before {
+  position: absolute;
+  left: 0;
+  content: "\201C";
+  color: white;
+}
+
+.quote h2::after {
+  position: absolute;
+  content: "\201d";
+  color: white;
+  right: 0;
+}
+
+.quote h3 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.sharebtn {
+  position: absolute;
+  bottom: 100px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  background-color: green;
+}

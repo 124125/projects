@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ab00ff;
+  height: 100vh;
+}
+
+.buttonbox {
+  height: 50px;
+  width: 200px;
+  background-color: #00f5ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonbox::before{
+  content: "";
+  height: 400px;
+  width: 400px;
+  top: 0;
+  left: 0;
+  transform: translate(0,30%);
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  animation: helli ease forwards;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+@keyframes helli{
+  to{
+    transform: translate(-10%,-50%);
+  }
+}
